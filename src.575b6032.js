@@ -13,8 +13,8 @@ module.exports=[{id:"XWaQXcbk0",name:"Картофель, запеченный �
 },{}],"Kgfu":[function(require,module,exports) {
 "use strict";var e=require("./common"),u=t(require("../tamplates/menu-cards.hbs")),n=t(require("./menu.json"));function t(e){return e&&e.__esModule?e:{default:e}}const r=o(n.default);function o(e){return(0,u.default)(e)}console.log((0,u.default)(n.default)),e.menuEl.insertAdjacentHTML("beforeend",r);
 },{"./common":"eTjE","../tamplates/menu-cards.hbs":"liw0","./menu.json":"NkM5"}],"yj0S":[function(require,module,exports) {
-"use strict";var e=require("./common");const t={LIGHT:"light-theme",DARK:"dark-theme"};function s(s){e.inputEl.chacked?(e.bodyEl.classList.remove(t.LIGHT),e.bodyEl.classList.add(t.DARK),localStorage.setItem("theme",t.DARK)):(e.bodyEl.classList.add(t.LIGHT),e.bodyEl.classList.remove(t.DARK),localStorage.setItem("theme",t.LIGHT))}e.inputEl.addEventListener("change",s);
+"use strict";var e=require("./common");const t={LIGHT:"light-theme",DARK:"dark-theme"};function s(){e.inputEl.checked?(e.bodyEl.classList.add(t.DARK),e.bodyEl.classList.remove(t.LIGHT),localStorage.setItem("theme",t.DARK)):(e.bodyEl.classList.add(t.LIGHT),e.bodyEl.classList.remove(t.DARK),localStorage.setItem("theme",t.LIGHT))}function l(){const s=localStorage.getItem("theme");null===s?(e.bodyEl.classList.add(t.LIGHT),localStorage.setItem("theme",t.LIGHT)):s===t.LIGHT?(e.bodyEl.classList.add(t.LIGHT),e.bodyEl.classList.remove(t.DARK)):s===t.DARK&&(e.bodyEl.classList.add(t.DARK),e.bodyEl.classList.remove(t.LIGHT),e.inputEl.checked=!0)}l(),e.inputEl.addEventListener("change",s);
 },{"./common":"eTjE"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/common"),require("./js/menu-markup"),require("./js/change-theme");
 },{"./sass/main.scss":"clu1","./js/common":"eTjE","./js/menu-markup":"Kgfu","./js/change-theme":"yj0S"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/src.51bb70ee.js.map
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.575b6032.js.map
